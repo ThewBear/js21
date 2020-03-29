@@ -1,7 +1,9 @@
 body {
-  background-image: url('./background.jpg');
+  background-image: url("./background.jpg");
   background-size: cover;
   color: #ffffff;
+
+  overflow: hidden;
 
   height: 100vh;
   font-weight: bold;
