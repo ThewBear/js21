@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/([^/]+)",
+      "status": 308,
+      "headers": { "Location": "/$1/" }
+    },
+    { "handle": "filesystem" },
+    {
+      "src": "/(.*)",
+      "status": 308,
+      "headers": { "Location": "https://github.com/ThewBear/js21#readme" }
+    }
+  ]
+}
