@@ -2,9 +2,9 @@
 
 ## Projects
 
-| ✔          | 💡     | 💻           |
-| ---------- | ------ | ------------ |
-| `Finished` | `Demo` | `Souce code` |
+| ✔          | 💡     | 💻            |
+| ---------- | ------ | ------------- |
+| `Finished` | `Demo` | `Source code` |
 
 1. Falling Snow ✔ [💡](https://js21.thewdhanat.com/01%20-%20Falling%20Snow/) [💻](./01%20-%20Falling%20Snow/start.js)
 1. Countdown Timer ✔ [💡](https://js21.thewdhanat.com/02%20-%20Countdown%20Timer/) [💻](./02%20-%20Countdown%20Timer/start.js)
