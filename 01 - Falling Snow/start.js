@@ -1,9 +1,10 @@
 (() => {
   // Config
-  const minSpeedX = -4;
-  const maxSpeedX = 4;
-  const minSpeedY = 0;
-  const maxSpeedY = 2;
+  const minSpeedX = -1.5;
+  const maxSpeedX = 1.5;
+  const minSpeedY = 0.5;
+  const maxSpeedY = 1;
+  const accelerationFactor = 10 ** -2;
 
   // Create canvas
   const canvas = document.getElementById("falling-snow-canvas");
@@ -22,7 +23,15 @@
     radius: random(2, 4),
     opacity: random(0.5, 1),
     speedX: random(minSpeedX, maxSpeedX),
-    speedY: random(minSpeedX, maxSpeedY)
+    speedY: random(minSpeedY, maxSpeedY),
+    accelerationX: random(
+      minSpeedX * accelerationFactor,
+      maxSpeedX * accelerationFactor
+    ),
+    accelerationY: random(
+      minSpeedY * accelerationFactor,
+      maxSpeedY * accelerationFactor
+    )
   }));
 
   function draw(snowBall) {
@@ -36,28 +45,38 @@
     snowBall.x += snowBall.speedX;
     snowBall.y += snowBall.speedY;
 
+    if (Math.random() > 0.5) {
+      snowBall.speedX += snowBall.accelerationX;
+      snowBall.speedY += snowBall.accelerationY;
+    }
+
+    if (
+      (snowBall.speedX > maxSpeedX ||
+        snowBall.speedX < minSpeedX ||
+        Math.random > 0.75) &&
+      snowBall.speedX * snowBall.accelerationX > 0
+    ) {
+      snowBall.accelerationX = -snowBall.accelerationX;
+    }
+    if (
+      snowBall.speedY > maxSpeedY &&
+      snowBall.speedY * snowBall.accelerationY > 0
+    ) {
+      snowBall.accelerationY = -snowBall.accelerationY;
+    } else if (snowBall.speedY < minSpeedY) {
+      snowBall.accelerationY = Math.abs(snowBall.accelerationY);
+    }
+
     if (snowBall.x < 0) {
       snowBall.x = canvas.width;
     } else if (snowBall.x > canvas.width) {
       snowBall.x = 0;
     }
-
     if (snowBall.y < 0) {
       snowBall.y = canvas.height;
     } else if (snowBall.y > canvas.height) {
       snowBall.y = 0;
       snowBall.radius = random(2, 4);
-    }
-
-    if (Math.random() > 0.9) {
-      snowBall.speedX += random(-0.2, 0.2);
-      snowBall.speedY += random(0, 0.05);
-      if (snowBall.speedX > maxSpeedX || snowBall.speedX < minSpeedX) {
-        snowBall.speedX = random(minSpeedX, maxSpeedX);
-      }
-      if (snowBall.speedY > maxSpeedY || snowBall.speedY < minSpeedY) {
-        snowBall.speedY = random(minSpeedY, maxSpeedY);
-      }
     }
   }
 
