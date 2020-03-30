@@ -27,8 +27,9 @@
       Math.floor((unixTimeLeft % MINUTE) / SECOND)
     );
 
-    requestAnimationFrame(countDown);
+    const timeToNextSecond = 1000 - (now % SECOND);
+    setTimeout(countDown, timeToNextSecond);
   }
 
-  requestAnimationFrame(countDown);
+  countDown();
 })();
