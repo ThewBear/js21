@@ -10,7 +10,7 @@
 1. Countdown Timer ✔ [💡](https://js21.thewdhanat.com/02%20-%20Countdown%20Timer/) [💻](./02%20-%20Countdown%20Timer/start.js)
 1. Async Await ✔
 1. Eye Rolling ✔ [💡](https://js21.thewdhanat.com/04%20-%20Eye%20Rolling/) [💻](./04%20-%20Eye%20Rolling/start.js)
-1. Watercolor Painting
+1. Watercolor Painting ✔ [💡](https://js21.thewdhanat.com/05%20-%20Watercolor%20Painting/) [💻](./05%20-%20Watercolor%20Painting/start.js)
 1. Duck Hunt
 1. Konami Code
 1. What is "this"?
