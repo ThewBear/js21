@@ -9,7 +9,7 @@
 1. Falling Snow ✔ [💡](https://js21.thewdhanat.com/01%20-%20Falling%20Snow/) [💻](./01%20-%20Falling%20Snow/start.js)
 1. Countdown Timer ✔ [💡](https://js21.thewdhanat.com/02%20-%20Countdown%20Timer/) [💻](./02%20-%20Countdown%20Timer/start.js)
 1. Async Await ✔
-1. Eye Rolling
+1. Eye Rolling ✔ [💡](https://js21.thewdhanat.com/04%20-%20Eye%20Rolling/) [💻](./04%20-%20Eye%20Rolling/start.js)
 1. Watercolor Painting
 1. Duck Hunt
 1. Konami Code
