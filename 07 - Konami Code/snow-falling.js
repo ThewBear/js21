@@ -1,67 +1,96 @@
-function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+(() => {
+  // Config
+  const minSpeedX = -1.5;
+  const maxSpeedX = 1.5;
+  const minSpeedY = 0.5;
+  const maxSpeedY = 1;
+  const accelerationFactor = 10 ** -2;
 
-function setup() {
-  const canvas = document.getElementById('falling-snow-canvas');
+  // Create canvas
+  const canvas = document.getElementById("falling-snow-canvas");
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
+  const canvasContext = canvas.getContext("2d");
 
-  return {
-    canvas,
-    canvasContext: canvas.getContext('2d'),
-    numberOfSnowBalls: 250
-  };
-}
+  // Utilities
+  const random = (min, max) => Math.random() * (max - min) + min;
 
-function createSnowBalls(canvas, numberOfSnowBalls) {
-  return [...Array(numberOfSnowBalls)].map(() => {
-    return {
-      x: random(0, canvas.width),
-      y: random(0, canvas.height),
-      opacity: random(0.5, 1),
-      speedX: random(-5, 5),
-      speedY: random(1, 3),
-      radius: random(2, 4)
-    };
-  });
-}
+  const snowBalls = Array.from(
+    Array(Math.floor((canvas.width * canvas.height) / 4000))
+  ).map(() => ({
+    x: random(0, canvas.width),
+    y: random(0, canvas.height),
+    radius: random(2, 4),
+    opacity: random(0.5, 1),
+    speedX: random(minSpeedX, maxSpeedX),
+    speedY: random(minSpeedY, maxSpeedY),
+    accelerationX: random(
+      minSpeedX * accelerationFactor,
+      maxSpeedX * accelerationFactor
+    ),
+    accelerationY: random(
+      minSpeedY * accelerationFactor,
+      maxSpeedY * accelerationFactor
+    )
+  }));
 
-function createSnowBallDrawer(canvasContext) {
-  return snowBall => {
+  function draw(snowBall) {
     canvasContext.beginPath();
     canvasContext.arc(snowBall.x, snowBall.y, snowBall.radius, 0, Math.PI * 2);
-    canvasContext.fillStyle = `rgba(255, 255, 255, ${snowBall.opacity})`;
+    canvasContext.fillStyle = `rgba(255,255,255,${snowBall.opacity})`;
     canvasContext.fill();
-  };
-}
+  }
 
-function createSnowBallMover(canvas) {
-  return snowBall => {
+  function moveSnowBall(snowBall) {
     snowBall.x += snowBall.speedX;
     snowBall.y += snowBall.speedY;
 
-    if (snowBall.x > canvas.width) {
-      snowBall.x = 0;
-    } else if (snowBall.x < 0) {
+    if (Math.random() > 0.5) {
+      snowBall.speedX += snowBall.accelerationX;
+      snowBall.speedY += snowBall.accelerationY;
+    }
+
+    if (
+      (snowBall.speedX > maxSpeedX ||
+        snowBall.speedX < minSpeedX ||
+        Math.random > 0.75) &&
+      snowBall.speedX * snowBall.accelerationX > 0
+    ) {
+      snowBall.accelerationX = -snowBall.accelerationX;
+    }
+    if (
+      snowBall.speedY > maxSpeedY &&
+      snowBall.speedY * snowBall.accelerationY > 0
+    ) {
+      snowBall.accelerationY = -snowBall.accelerationY;
+    } else if (snowBall.speedY < minSpeedY) {
+      snowBall.accelerationY = Math.abs(snowBall.accelerationY);
+    }
+
+    if (snowBall.x < 0) {
       snowBall.x = canvas.width;
+    } else if (snowBall.x > canvas.width) {
+      snowBall.x = 0;
     }
-
-    if (snowBall.y > canvas.height) {
+    if (snowBall.y < 0) {
+      snowBall.y = canvas.height;
+    } else if (snowBall.y > canvas.height) {
       snowBall.y = 0;
+      snowBall.radius = random(2, 4);
     }
-  };
-}
+  }
 
-function startSnowing() {
-  const { canvas, canvasContext, numberOfSnowBalls } = setup();
-  const snowBalls = createSnowBalls(canvas, numberOfSnowBalls);
-  const drawSnowBall = createSnowBallDrawer(canvasContext);
-  const moveSnowBall = createSnowBallMover(canvas);
-
-  setInterval(() => {
+  function animate() {
     canvasContext.clearRect(0, 0, canvas.width, canvas.height);
-    snowBalls.forEach(drawSnowBall);
-    snowBalls.forEach(moveSnowBall);
-  }, 50);
-}
+    snowBalls.forEach(snowBall => draw(snowBall));
+    snowBalls.forEach(snowBall => moveSnowBall(snowBall));
+    requestAnimationFrame(animate);
+  }
+
+  window.startSnowing = animate;
+
+  window.addEventListener("resize", () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+})();

@@ -12,7 +12,7 @@
 1. Eye Rolling ✔ [💡](https://js21.thewdhanat.com/04%20-%20Eye%20Rolling/) [💻](./04%20-%20Eye%20Rolling/start.js)
 1. Watercolor Painting ✔ [💡](https://js21.thewdhanat.com/05%20-%20Watercolor%20Painting/) [💻](./05%20-%20Watercolor%20Painting/start.js)
 1. Duck Hunt ✔ [💡](https://js21.thewdhanat.com/06%20-%20Duck%20Hunt/) [💻](./06%20-%20Duck%20Hunt/start.js)
-1. Konami Code
+1. Konami Code ✔ [💡](https://js21.thewdhanat.com/07%20-%20Konami%20Code/) [💻](./07%20-%20Konami%20Code/start.js)
 1. What is "this"?
 1. Parallax Scrolling
 1. Kanban Board
