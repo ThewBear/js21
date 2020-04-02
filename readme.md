@@ -14,7 +14,7 @@
 1. Duck Hunt ✔ [💡](https://js21.thewdhanat.com/06%20-%20Duck%20Hunt/) [💻](./06%20-%20Duck%20Hunt/start.js)
 1. Konami Code ✔ [💡](https://js21.thewdhanat.com/07%20-%20Konami%20Code/) [💻](./07%20-%20Konami%20Code/start.js)
 1. What is "this"? ✔
-1. Parallax Scrolling
+1. Parallax Scrolling ✔ [💡](https://js21.thewdhanat.com/09%20-%20Parallax%20Scrolling/) [💻](./09%20-%20Parallax%20Scrolling/start.js)
 1. Kanban Board
 1. Text Reveal
 1. Air Quality Visualizer

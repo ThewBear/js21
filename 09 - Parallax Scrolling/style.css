@@ -7,13 +7,14 @@ body {
   justify-content: center;
 
   position: relative;
-  background-image: url('./sky.png');
+  background: url('./sky.jpg') top center / 100% 150% no-repeat;
+  overflow: hidden;
 }
 
 .moon {
   position: absolute;
   left: 50%;
-  top: 70%;
+  bottom: 0%;
 
   background: #F5D059;
   box-shadow: inset -15px 0px #EDC541;
@@ -33,7 +34,7 @@ body {
 
 h1 {
   position: absolute;
-  top: 70%;
+  bottom: 0%;
 
   color: #FFF;
   font-size: 3.8vw;
