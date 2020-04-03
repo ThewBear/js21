@@ -45,12 +45,24 @@ body {
   background-color: #87b4d8;
 }
 
+.container .todo ~ .drop-zone {
+  outline-color: #87b4d8;
+}
+
 .container .doing {
   background-color: #ee9193;
 }
 
+.container .doing ~ .drop-zone {
+  outline-color: #ee9193;
+}
+
 .container .done {
   background-color: #2fbfbf;
+}
+
+.container .done ~ .drop-zone {
+  outline-color: #2fbfbf;
 }
 
 .drop-zone {
