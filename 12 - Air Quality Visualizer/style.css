@@ -18,7 +18,7 @@ body {
   color: #515154;
 
   background: #43cea2;
-  background: linear-gradient(45deg, #185a9d, #43cea2);
+  background: linear-gradient(45deg, #185a9d, var(--current-aqi-color));
 }
 
 .card {
