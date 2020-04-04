@@ -18,7 +18,7 @@
 1. Kanban Board ✔ [💡](https://js21.thewdhanat.com/10%20-%20Kanban%20Board/) [💻](./10%20-%20Kanban%20Board/start.js)
 1. Text Reveal ✔ [💡](https://js21.thewdhanat.com/11%20-%20Text%20Reveal/) [💻](./11%20-%20Text%20Reveal/start.js)
 1. Air Quality Visualizer ✔ [💡](https://js21.thewdhanat.com/12%20-%20Air%20Quality%20Visualizer/) [💻](./12%20-%20Air%20Quality%20Visualizer/start.js)
-1. JavaScript Weird Parts
+1. JavaScript Weird Parts ✔
 1. Carousel
 1. Music Player
 1. Text to Speech
