@@ -16,7 +16,7 @@
 1. What is "this"? ✔
 1. Parallax Scrolling ✔ [💡](https://js21.thewdhanat.com/09%20-%20Parallax%20Scrolling/) [💻](./09%20-%20Parallax%20Scrolling/start.js)
 1. Kanban Board ✔ [💡](https://js21.thewdhanat.com/10%20-%20Kanban%20Board/) [💻](./10%20-%20Kanban%20Board/start.js)
-1. Text Reveal
+1. Text Reveal ✔ [💡](https://js21.thewdhanat.com/11%20-%20Text%20Reveal/) [💻](./11%20-%20Text%20Reveal/start.js)
 1. Air Quality Visualizer
 1. JavaScript Weird Parts
 1. Carousel
