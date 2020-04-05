@@ -20,7 +20,9 @@
     const second = Math.floor(time % 60)
       .toString()
       .padStart(2, "0");
-    return `${minute}:${second}`;
+    return `${minute === "NaN" ? "--" : minute}:${
+      second === "NaN" ? "--" : second
+    }`;
   }
 
   function onLoadedData() {
