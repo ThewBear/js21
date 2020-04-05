@@ -21,7 +21,7 @@
 1. JavaScript Weird Parts ✔
 1. Carousel ✔ [💡](https://js21.thewdhanat.com/14%20-%20Carousel/) [💻](./14%20-%20Carousel/start.js)
 1. Music Player ✔ [💡](https://js21.thewdhanat.com/15%20-%20Music%20Player/) [💻](./15%20-%20Music%20Player/start.js)
-1. Text to Speech
+1. Text to Speech ✔ [💡](https://js21.thewdhanat.com/16%20-%20Text%20to%20Speech/) [💻](./16%20-%20Text%20to%20Speech/start.js)
 1. Speech to Text
 1. What is "prototype"?
 1. Autocomplete
