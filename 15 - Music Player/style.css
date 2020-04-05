@@ -111,3 +111,17 @@ input::-webkit-slider-thumb {
 .play {
   background: url('./play.png') 0 0 / contain no-repeat;
 }
+
+body.playing {
+  background: #ee2d6e;
+  background: linear-gradient(45deg, #38bdd1, #9292be, #ee2d6e);
+}
+
+.playing .container {
+  box-shadow: 0 10px 10px 0 #515154, 5px -5px 5px 0 #aa4b6b, -5px 5px 5px 0 #38bdd1;
+}
+
+.playing input::-webkit-slider-thumb {
+  background: #ee2d6e;
+  box-shadow: -100vw 0 0 100vw #ee2d6e;
+}

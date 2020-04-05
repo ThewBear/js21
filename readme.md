@@ -19,8 +19,8 @@
 1. Text Reveal ✔ [💡](https://js21.thewdhanat.com/11%20-%20Text%20Reveal/) [💻](./11%20-%20Text%20Reveal/start.js)
 1. Air Quality Visualizer ✔ [💡](https://js21.thewdhanat.com/12%20-%20Air%20Quality%20Visualizer/) [💻](./12%20-%20Air%20Quality%20Visualizer/start.js)
 1. JavaScript Weird Parts ✔
-1. Carousel ✔ [💡](https://js21.thewdhanat.com/12%20-%20Carousel/) [💻](./12%20-%20Carousel/start.js)
-1. Music Player
+1. Carousel ✔ [💡](https://js21.thewdhanat.com/14%20-%20Carousel/) [💻](./14%20-%20Carousel/start.js)
+1. Music Player ✔ [💡](https://js21.thewdhanat.com/15%20-%20Music%20Player/) [💻](./15%20-%20Music%20Player/start.js)
 1. Text to Speech
 1. Speech to Text
 1. What is "prototype"?
