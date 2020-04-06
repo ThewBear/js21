@@ -27,6 +27,7 @@
     ulElem.innerHTML = "";
     matchedCarBrands.forEach((carBrand) => {
       const liElem = document.createElement("li");
+      liElem.setAttribute("tabindex", "0");
       liElem.innerText = carBrand;
       liElem.addEventListener("click", () => {
         document.body.removeChild(ulElem);
@@ -40,12 +41,17 @@
     document.body.appendChild(ulElem);
   });
 
-  searchElem.addEventListener("change", () => {
+  searchElem.addEventListener("blur", () => {
+    const ulElem = document.querySelector(".results");
     if (state === IDLE) {
-      const ulElem = document.querySelector(".results");
       document.body.removeChild(ulElem);
     } else {
-      requestAnimationFrame(() => (state = IDLE));
+      requestAnimationFrame(() => {
+        if (!ulElem.contains(document.activeElement)) {
+          document.body.removeChild(ulElem);
+          state = IDLE;
+        }
+      });
     }
   });
 })();

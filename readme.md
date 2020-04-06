@@ -22,9 +22,9 @@
 1. Carousel ✔ [💡](https://js21.thewdhanat.com/14%20-%20Carousel/) [💻](./14%20-%20Carousel/start.js)
 1. Music Player ✔ [💡](https://js21.thewdhanat.com/15%20-%20Music%20Player/) [💻](./15%20-%20Music%20Player/start.js)
 1. Text to Speech ✔ [💡](https://js21.thewdhanat.com/16%20-%20Text%20to%20Speech/) [💻](./16%20-%20Text%20to%20Speech/start.js)
-1. Speech to Text ✔ [💡](https://js21.thewdhanat.com/16%20-%20Speech%20to%20Text/) [💻](./16%20-%20Speech%20to%20Text/start.js)
+1. Speech to Text ✔ [💡](https://js21.thewdhanat.com/17%20-%20Speech%20to%20Text/) [💻](./17%20-%20Speech%20to%20Text/start.js)
 1. What is "prototype"? ✔
-1. Autocomplete ✔ [💡](https://js21.thewdhanat.com/16%20-%20Autocomplete/) [💻](./16%20-%20Autocomplete/start.js)
+1. Autocomplete ✔ [💡](https://js21.thewdhanat.com/16%20-%20Autocomplete/) [💻](./19%20-%20Autocomplete/start.js)
 1. Form Validation
 1. Infinite Scroll Gallery
 
