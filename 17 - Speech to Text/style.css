@@ -47,12 +47,32 @@ body {
   width: 100px;
   height: 100px;
   margin-bottom: 10%;
+  border-radius: 50%;
 }
 
 .pause {
-  background: url('./pause.png') 0 0 / contain no-repeat;
+  background: url("./pause.png") center / 113px no-repeat;
+  box-shadow: 0 0 5px 2px #ea4f3e;
 }
 
 .record {
-  background: url('./record.png') 0 0 / contain no-repeat;
+  background: url("./record.png") center / 113px no-repeat;
+}
+
+.pause.hearing {
+  animation: hearing 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes hearing {
+  0% {
+    box-shadow: 0 0 10px 5px #ea4f3e;
+    filter: contrast(1);
+  }
+  50% {
+    box-shadow: 0 0 20px 5px #ea4f3e;
+  }
+  100% {
+    box-shadow: 0 0 30px 10px #ea4f3e;
+    filter: contrast(1.5);
+  }
 }
