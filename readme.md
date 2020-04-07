@@ -24,8 +24,8 @@
 1. Text to Speech ✔ [💡](https://js21.thewdhanat.com/16%20-%20Text%20to%20Speech/) [💻](./16%20-%20Text%20to%20Speech/start.js)
 1. Speech to Text ✔ [💡](https://js21.thewdhanat.com/17%20-%20Speech%20to%20Text/) [💻](./17%20-%20Speech%20to%20Text/start.js)
 1. What is "prototype"? ✔
-1. Autocomplete ✔ [💡](https://js21.thewdhanat.com/16%20-%20Autocomplete/) [💻](./19%20-%20Autocomplete/start.js)
-1. Form Validation
+1. Autocomplete ✔ [💡](https://js21.thewdhanat.com/19%20-%20Autocomplete/) [💻](./19%20-%20Autocomplete/start.js)
+1. Form Validation ✔ [💡](https://js21.thewdhanat.com/20%20-%20Form%20Validation/) [💻](./20%20-%20Form%20Validation/start.js)
 1. Infinite Scroll Gallery
 
 ## Credits
