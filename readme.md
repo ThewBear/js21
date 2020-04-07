@@ -26,7 +26,7 @@
 1. What is "prototype"? ✔
 1. Autocomplete ✔ [💡](https://js21.thewdhanat.com/19%20-%20Autocomplete/) [💻](./19%20-%20Autocomplete/start.js)
 1. Form Validation ✔ [💡](https://js21.thewdhanat.com/20%20-%20Form%20Validation/) [💻](./20%20-%20Form%20Validation/start.js)
-1. Infinite Scroll Gallery
+1. Infinite Scroll Gallery ✔ [💡](https://js21.thewdhanat.com/21%20-%20Infinite%20Scroll%20Gallery/) [💻](./21%20-%20Infinite%20Scroll%20Gallery/start.js)
 
 ## Credits
 
